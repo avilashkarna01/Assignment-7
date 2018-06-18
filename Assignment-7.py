@@ -35,12 +35,16 @@ table(1)
 print("\n")
 
 #Question-4
-a=int(input("enter a base: "))
-b=int(input("enter a base: "))
-def power(x,y):
-    return x**y
-print(power(a,b))
-print("\n")
+def power (b,p):
+	s=1
+	if p==1:
+		return b
+	else:
+		s=b*power(b,p-1)
+		return s
+print(power(4,7))	
+print("\n")	
+
 
 
 #Question-5
